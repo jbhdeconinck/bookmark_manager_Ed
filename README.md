@@ -19,4 +19,4 @@ So that I can quickly look through my bookmark
 I would like to be able to filter my links by tag
 ```
 
-![Domanin Model Image](Downloads/client_server_architecture.png "Domain Model Image")
+![Domanin Model Image](./client_server_architecture.png "Domain Model Image")
