@@ -3,7 +3,7 @@ User Stories
 
 ```sh
 As a makers student
-So that I can access my favourite websites quicker
+So that I can access my favourite websites more quickly
 I would like to be able to see a list of links from the database
 
 As a makers student
