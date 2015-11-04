@@ -9,6 +9,7 @@ feature 'Creating tags' do
 
 		link = Bookmark.first
     expect(link.tags.map(&:name)).to include('Sport')
+    expect(page).to have_content('Sport')
 		end
 
 end
