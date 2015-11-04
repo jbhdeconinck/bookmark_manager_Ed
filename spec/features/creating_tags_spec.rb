@@ -1,17 +1,14 @@
-feature 'Creates links' do
+feature 'Creating tags' do
 
 	scenario 'Stores website links in bookmark' do
 		visit '/links/new'
 		fill_in :url, with: 'http://www.google.com'
 		fill_in :name, with: 'Google'
-		fill_in :tags, with: 'Sport'
+    fill_in :tags, with: 'Sport'
 		click_button 'Add link'
 
-		expect(current_path).to eq '/links'
-
-		within 'ul#links' do
-	    expect(page).to have_content('Google')
+		link = Bookmark.first
+    expect(link.tags.map(&:name)).to include('Sport')
 		end
 
-	end
 end
