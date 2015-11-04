@@ -3,7 +3,7 @@
 <ul id='links'>
   <% @links.each do |link| %>
   <li>
-    Title: <%= link.name %>  URL: <%= link.url %>  Tag: <%= link.tags.last.name %>
+    Title: <%= link.name %>  URL: <%= link.url %>  Tags: <%= link.tags.map(&:name).join(" ") %>
   </li>
   <% end %>
 </ul>
