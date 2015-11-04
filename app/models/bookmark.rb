@@ -19,7 +19,7 @@ class Tag
 
 	property :id,         Serial
 	property :name,       String
-	
+
 
 	has n, :bookmarks, :through => Resource
 
