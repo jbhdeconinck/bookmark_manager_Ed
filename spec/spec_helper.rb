@@ -8,6 +8,8 @@ require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require './app/models/bookmark'
+require './app/models/tag'
+require './app/datamapper_setter'
 require 'database_cleaner'
 
 Capybara.app = BookmarkManager
