@@ -1,6 +1,7 @@
 feature 'Creating multiple tags' do
 
 	scenario 'assign multiple tags to a single link' do
+		sign_up
 		visit '/links/new'
 		fill_in :url, with: 'http://www.google.com'
 		fill_in :name, with: 'Google'

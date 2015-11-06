@@ -1,6 +1,7 @@
 feature 'Creating tags' do
 
 	scenario 'Stores website links in bookmark' do
+		sign_up
 		visit '/links/new'
 		fill_in :url, with: 'http://www.google.com'
 		fill_in :name, with: 'Google'

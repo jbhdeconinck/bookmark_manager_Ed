@@ -12,6 +12,6 @@ namespace :db do
   desc 'destructive upgrade'
   task :auto_upgrade do
     DataMapper.auto_upgrade!
-    puts "Auto update complete (no data loss)"
+    puts "Auto upgrade complete (no data loss)"
   end
 end
